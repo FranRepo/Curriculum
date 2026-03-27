@@ -73,8 +73,8 @@ nav ul li:not(:last-child)::after {
 /* SOBRE MI */
 .about {
     background: #e3a34b;
-    padding: 60px 40px;
     color: #3E4A93;
+    width: 100%;
 }
   
 .about h2 {
@@ -88,7 +88,7 @@ nav ul li:not(:last-child)::after {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .skill-bar {
