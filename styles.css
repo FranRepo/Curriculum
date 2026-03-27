@@ -10,7 +10,7 @@ body {
   color: #3E4A93;
 }
 
-/* NAV */
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -31,9 +31,19 @@ nav a {
   font-weight: 500;
 }
 
+nav ul li {
+    position: relative;
+}
+  
+nav ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 15px;
+    color: #e2e8f0;
+}
+
 .logo {
     color: #e2e8f0;
-  }
+}
 
 /* HERO */
 .hero {
@@ -98,7 +108,7 @@ nav a {
   
   .skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     margin-top: 20px;
   }
