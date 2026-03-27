@@ -75,55 +75,100 @@ nav ul li:not(:last-child)::after {
     background: #e3a34b;
     padding: 60px 40px;
     color: #3E4A93;
-  }
+}
   
-  .about h2 {
+.about h2 {
     margin-bottom: 15px;
-  }
+}
+
+.skill-bar {
+    margin-bottom: 25px;
+}
   
+.score {
+    display: inline-block;
+    background: #3E4A93;
+    color: #FFFDF1;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+  
+.bar {
+    width: 100%;
+    height: 18px;
+    background: #cfd8d3;
+    position: relative;
+    margin: 5px 0;
+}
+  
+.fill {
+    height: 100%;
+    background: #FFFDF1;
+    position: relative;
+}
+  
+  /* efecto punta tipo flecha */
+ .fill::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 10px solid #3E4A93;
+}
+  
+.skill-bar p {
+    text-align: center;
+    font-size: 14px;
+    color: #3E4A93;
+}
+
   /* PROYECTOS */
-  #projects {
+#projects {
     padding: 60px 40px;
-  }
+}
   
-  .projects-container {
+.projects-container {
     margin-top: 20px;
-  }
+}
   
-  .project-card {
+.project-card {
     height: 60px;
     background: #e7c86e;
     border-radius: 10px;
     margin-bottom: 15px;
-  }
+}
   
-  .project-card:hover {
+.project-card:hover {
     transform: scale(1.03);
-  }
+}
 
   /* HABILIDADES */
-  #skills {
+#skills {
     padding: 60px 40px;
-  }
+}
   
-  .skills-grid {
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     margin-top: 20px;
-  }
+ }
   
-  .skill {
+.skill {
     border: 2px solid #e3a34b;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
-  }
+}
   
   /* CONTACTO */
-  .contact {
+.contact {
     padding: 60px 40px;
     background-image: url("Fondo.png");
     background-size: cover;
-  }
+}
