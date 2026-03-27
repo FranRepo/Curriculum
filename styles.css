@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family:  'Segoe UI',sans-serif;
 }
 
 body {
-  background: #0f172a;
+  background: #FFFDF1;
   color: #3E4A93;
 }
 
@@ -14,37 +14,45 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
-  background: #F7AA3E;
-  position: sticky;
-  top: 0;
+  background: #3E4A93;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  list-style: none;
 }
 
 nav a {
   color: #e2e8f0;
   text-decoration: none;
+  font-weight: 500;
 }
 
 /* HERO */
 .hero {
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    background-image: url("Fondo.png"); 
+    background-size: cover;
+    background-position: center;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-content h1 {
+  font-size: 3rem;
 }
+
+.hero-content h3 {
+    margin: 10px 0;
+    font-weight: 500;
+  }
 
 .hero button {
+  margin-top: 15px;
   padding: 10px 20px;
   border: none;
   background: #F7AA3E;
@@ -53,38 +61,56 @@ nav a {
   border-radius: 8px;
 }
 
-/* SECCIONES */
-section {
-  padding: 60px 40px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* PROYECTOS */
-.project-card {
-  background: #F8D054;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-/* SKILLS */
-#skills ul {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-#skills li {
-  background: #FFFDF1;
-  color: #F7AA3E;
-  padding: 8px 12px;
-  border-radius: 6px;
-}
+/* SOBRE MI */
+.about {
+    background: #e3a34b;
+    padding: 60px 40px;
+    color: #2c2c2c;
+  }
+  
+  .about h2 {
+    margin-bottom: 15px;
+  }
+  
+  /* PROYECTOS */
+  #projects {
+    padding: 60px 40px;
+  }
+  
+  .projects-container {
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    height: 60px;
+    background: #e7c86e;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* HABILIDADES */
+  #skills {
+    padding: 60px 40px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skill {
+    border: 2px solid #e3a34b;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* CONTACTO */
+  .contact {
+    padding: 60px 40px;
+    background-image: url("Fondo.png");
+    background-size: cover;
+  }
