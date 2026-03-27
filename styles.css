@@ -31,6 +31,10 @@ nav a {
   font-weight: 500;
 }
 
+.logo {
+    color: #e2e8f0;
+  }
+
 /* HERO */
 .hero {
     height: 90vh;
@@ -45,11 +49,6 @@ nav a {
 .hero-content h1 {
   font-size: 3rem;
 }
-
-.hero-content h3 {
-    margin: 10px 0;
-    font-weight: 500;
-  }
 
 .hero button {
   margin-top: 15px;
@@ -88,6 +87,10 @@ nav a {
     margin-bottom: 15px;
   }
   
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+
   /* HABILIDADES */
   #skills {
     padding: 60px 40px;
