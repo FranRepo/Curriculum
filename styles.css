@@ -116,24 +116,8 @@ nav ul li:not(:last-child)::after {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px;
-}
-
-
-.fill {
+    justify-content: center;
     transition: width 1.5s ease;
-}
-  
-
-.fill::after {
-    content: "";
-    position: absolute;
-    right: -10px;
-    top: 0;
-    border-top: 9px solid transparent;
-    border-bottom: 9px solid transparent;
-    border-left: 10px solid #3E4A93;
 }
   
 .skill-bar p {

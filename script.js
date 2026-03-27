@@ -4,16 +4,24 @@ function scrollToSection(id) {
   });
 }
 
-window.addEventListener("load", () => {
-    const fills = document.querySelectorAll(".fill");
-  
-    fills.forEach(fill => {
-      const width = fill.style.width;
-      fill.style.width = "0";
-  
-      setTimeout(() => {
-        fill.style.transition = "width 1.5s ease";
-        fill.style.width = width;
-      }, 300);
-    });
+const fills = document.querySelectorAll(".fill");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const fill = entry.target;
+      const width = fill.getAttribute("data-width");
+
+      fill.style.width = width;
+    }
+  });
+}, { threshold: 0.5 });
+
+fills.forEach(fill => {
+  const width = fill.style.width;
+
+  fill.style.width = "0";
+  fill.setAttribute("data-width", width);
+
+  observer.observe(fill);
 });
