@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: #3E4A93;
+  background: #3E668A;
 }
 
 nav ul {
@@ -26,7 +26,7 @@ nav ul {
 }
 
 nav a {
-  color: #e2e8f0;
+  color: #8ABDD0;
   text-decoration: none;
   font-weight: 500;
 }
@@ -38,11 +38,11 @@ nav ul li {
 nav ul li:not(:last-child)::after {
     content: "|";
     margin-left: 15px;
-    color: #e2e8f0;
+    color: #8ABDD0;
 }
 
 .logo {
-    color: #e2e8f0;
+    color: #8ABDD0;
 }
 
 /* HOME */
@@ -71,8 +71,8 @@ nav ul li:not(:last-child)::after {
   margin-top: 15px;
   padding: 10px 20px;
   border: none;
-  background: #F7AA3E;
-  color: #3E4A93;
+  background: #8ABDD0;
+  color: #3E668A;
   cursor: pointer;
   border-radius: 8px;
 }
@@ -85,8 +85,8 @@ nav ul li:not(:last-child)::after {
 
 /* SOBRE MI */
 .about {
-    background: #e3a34b;
-    color: #3E4A93;
+    background: #994A3B;
+    color: #ECE1CF;
     width: 100%;
 }
   
@@ -109,7 +109,7 @@ nav ul li:not(:last-child)::after {
 }
   
 .score-inside {
-    color: #FFFDF1;
+    color: #ECE1CF;
     font-size: 12px;
     font-weight: bold;
 }
@@ -118,14 +118,14 @@ nav ul li:not(:last-child)::after {
 .bar {
     width: 100%;
     height: 20px;
-    background: #FFFDF1;
+    background: #ECE1CF;
     border-radius: 4px;
     overflow: hidden;
 }
   
 .fill {
     height: 100%;
-    background: #3E4A93;
+    background: #8ABDD0;
     position: relative;
     display: flex;
     align-items: center;
@@ -137,11 +137,11 @@ nav ul li:not(:last-child)::after {
     margin-top: 6px;
     text-align: center;
     font-size: 14px;
-    color: #3E4A93;
+    color: #ECE1CF;
 }
 
 .skill-bar:hover .fill {
-    background: #3E4A93;
+    background: #8ABDD0;
 }
 
   /* PROYECTOS */
@@ -155,7 +155,7 @@ nav ul li:not(:last-child)::after {
   
 .project-card {
     height: 60px;
-    background: #e7c86e;
+    background: #ECE1CF;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -177,7 +177,7 @@ nav ul li:not(:last-child)::after {
  }
   
 .skill {
-    border: 2px solid #e3a34b;
+    border: 2px solid #8ABDD0;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
