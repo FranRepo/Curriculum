@@ -81,6 +81,7 @@ nav ul li:not(:last-child)::after {
 .hero-image img {
   flex: 1;
   display: flex;
+  margin-left: 50px;
   justify-content: flex-end;
 }
 
