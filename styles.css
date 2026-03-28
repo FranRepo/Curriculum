@@ -7,7 +7,7 @@
 
 body {
   background: #FFFDF1;
-  color: #3E4A93;
+  color: #994A3B;
 }
 
 /* NAVBAR */
@@ -180,7 +180,6 @@ nav ul li:not(:last-child)::after {
 .skill {
     background-color:  #8ABDD0;
     padding: 15px;
-    border-radius: 8px;
     text-align: center;
     font-weight: bold;
 }
