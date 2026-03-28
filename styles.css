@@ -78,12 +78,18 @@ nav ul li:not(:last-child)::after {
   border-radius: 8px;
 }
 
-.hero-image img {
+.hero-image {
   flex: 1;
   display: flex;
-  margin-left: 60px;
   justify-content: flex-end;
+
 }
+
+.hero-image img {
+  width: 280px; 
+  max-width: 100%;
+}
+
 
 /* SOBRE MI */
 .about {
