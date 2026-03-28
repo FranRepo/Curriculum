@@ -64,7 +64,7 @@ nav ul li:not(:last-child)::after {
 
 .hero-content h1 {
   flex: 1;
-  font-size: 3rem;
+  font-size: 5rem;
 
 }
 
@@ -88,7 +88,7 @@ nav ul li:not(:last-child)::after {
 .hero-image img {
   width: 380px; 
   max-width: 100%;
-  margin-right: -60px;
+  margin-left: 100px;
 }
 
 
@@ -105,52 +105,66 @@ nav ul li:not(:last-child)::after {
 }
 
 .soft-skills-grid {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
-    max-width: 900px;
-    margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.skill-bar {
-    width: 100%;
-}
-  
-.score-inside {
-    color: #ECE1CF;
-    font-size: 12px;
-    font-weight: bold;
-}
-  
-  
-.bar {
-    width: 100%;
-    height: 20px;
-    background: #ECE1CF;
-    border-radius: 4px;
-    overflow: hidden;
-}
-  
-.fill {
-    height: 100%;
-    background: #8ABDD0;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: width 1.5s ease;
-}
-  
-.skill-bar p {
-    margin-top: 6px;
-    text-align: center;
-    font-size: 14px;
-    color: #ECE1CF;
+/* CONTENEDOR */
+.skill-donut {
+  text-align: center;
 }
 
-.skill-bar:hover .fill {
-    background: #8ABDD0;
+/* DONA */
+.donut {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #8ABDD0 calc(var(--percent) * 1%), 
+    #ECE1CF 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.donut::before {
+  content: "";
+  width: 75px;
+  height: 75px;
+  background: #994A3B; 
+  border-radius: 50%;
+  position: absolute;
+}
+
+.donut-inner {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.icon {
+  display: block;
+  font-size: 20px;
+}
+
+/* PORCENTAJE */
+.percent {
+  font-size: 12px;
+  color: #3E4A93;
+  font-weight: bold;
+}
+
+/* TEXTO */
+.skill-donut p {
+  margin-top: 10px;
+  color: #3E4A93;
 }
 
   /* PROYECTOS */
