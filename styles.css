@@ -80,6 +80,8 @@ nav ul li:not(:last-child)::after {
 .hero-image img {
   width: 300px;
   max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* SOBRE MI */
