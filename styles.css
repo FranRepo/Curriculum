@@ -10,7 +10,7 @@ body {
   color: #3E4A93;
 }
 
-/* Navbar */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ nav ul li:not(:last-child)::after {
     color: #e2e8f0;
 }
 
-/* HERO */
+/* HOME */
 .hero {
     height: 90vh;
     display: flex;
@@ -56,8 +56,15 @@ nav ul li:not(:last-child)::after {
     background-position: center;
 }
 
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .hero-content h1 {
   font-size: 3rem;
+  max-width: 500px;
 }
 
 .hero button {
@@ -68,6 +75,11 @@ nav ul li:not(:last-child)::after {
   color: #3E4A93;
   cursor: pointer;
   border-radius: 8px;
+}
+
+.hero-image img {
+  width: 300px;
+  max-width: 100%;
 }
 
 /* SOBRE MI */
