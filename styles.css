@@ -99,11 +99,11 @@ nav ul li:not(:last-child)::after {
     width: 100%;
 }
   
-.about h2 {
+/*.about h2 {
     font-size: 2rem;
     margin-bottom: 15px;
     margin-left: 15px;
-}
+}*/
 
 .about p {
   max-width: 800px;
