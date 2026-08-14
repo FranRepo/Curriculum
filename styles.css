@@ -5,9 +5,14 @@
   font-family:  'Segoe UI',sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #FFFDF1;
   color: #994A3B;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -47,25 +52,38 @@ nav ul li:not(:last-child)::after {
 
 /* HOME */
 .hero {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
-    padding-left: 80px;
+    padding: 60px 80px;
     background-image: url("Fondo.png"); 
     background-size: cover;
     background-position: center;
 }
 
 .hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  flex: 1;
 }
 
 .hero-content h1 {
   flex: 1;
   font-size: 4rem;
 
+}
+
+.hero-content h2 {
+  margin-top: 15px;
 }
 
 .hero button {
@@ -97,6 +115,7 @@ nav ul li:not(:last-child)::after {
     background: #994A3B;
     color: #ECE1CF;
     width: 100%;
+    padding: 60px 40px;
 }
   
 .about h2 {
@@ -110,6 +129,8 @@ nav ul li:not(:last-child)::after {
   margin: 0 auto;
   line-height: 1.6;
 }
+
+/*Habilidades Blandas*/
 
 .soft-skills-grid {
   margin-top: 40px;
@@ -176,7 +197,12 @@ nav ul li:not(:last-child)::after {
 }
   
 .projects-container {
-    margin-top: 20px;
+  margin-top: 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px
 }
   
 .project-card {
@@ -199,7 +225,8 @@ nav ul li:not(:last-child)::after {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin-top: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0;
  }
   
 .skill {
@@ -217,4 +244,320 @@ nav ul li:not(:last-child)::after {
     padding: 60px 40px;
     background-image: url("Fondo.png");
     background-size: cover;
+}
+
+@media (max-width: 900px) {
+
+  /* NAV */
+
+  nav {
+    padding: 20px 30px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  nav ul li:not(:last-child)::after {
+    margin-left: 8px;
+  }
+
+
+  /* HERO */
+
+  .hero {
+    padding: 60px 40px;
+  }
+
+  .hero-container {
+    gap: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-image img {
+    width: 300px;
+  }
+
+
+  /* HABILIDADES */
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* PROYECTOS */
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ========================================
+   CELULAR
+   ======================================== */
+
+@media (max-width: 600px) {
+
+  /* GENERAL */
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* ========================================
+     NAVBAR
+     ======================================== */
+
+  nav {
+    width: 100%;
+
+    padding: 18px 15px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px 12px;
+  }
+
+  nav ul li:not(:last-child)::after {
+    margin-left: 6px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+
+  /* ========================================
+     HERO
+     ======================================== */
+
+  .hero {
+    min-height: auto;
+
+    padding: 60px 20px;
+  }
+
+  .hero-container {
+    width: 100%;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 40px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+
+    line-height: 1.2;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    padding: 12px 20px;
+  }
+
+  .hero button h2 {
+    font-size: 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    width: 250px;
+    max-width: 80vw;
+  }
+
+
+  /* ========================================
+     SOBRE MI
+     ======================================== */
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    width: 100%;
+
+    text-align: justify;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* ========================================
+     HABILIDADES BLANDAS
+     ======================================== */
+
+  .soft-skills-grid {
+
+    width: 100%;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px 10px;
+
+    margin-top: 30px;
+  }
+
+  .skill-donut {
+    width: 100%;
+  }
+
+  .donut {
+    width: 110px;
+    height: 110px;
+  }
+
+  .donut::before {
+    width: 68px;
+    height: 68px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .percent {
+    font-size: 11px;
+  }
+
+  .skill-donut p {
+    font-size: 0.9rem;
+
+    padding: 0 5px;
+  }
+
+
+  /* ========================================
+     PROYECTOS
+     ======================================== */
+
+  #projects {
+    padding: 50px 20px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+
+    height: 180px;
+  }
+
+
+  /* ========================================
+     HABILIDADES TÉCNICAS
+     ======================================== */
+
+  #skills {
+    padding: 50px 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .skill {
+    padding: 12px 8px;
+
+    font-size: 0.85rem;
+  }
+
+
+  /* ========================================
+     CONTACTO
+     ======================================== */
+
+  .contact {
+    padding: 50px 20px;
+
+    text-align: center;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+  }
+}
+
+
+/* ========================================
+   CELULARES PEQUEÑOS
+   ======================================== */
+
+@media (max-width: 380px) {
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+
+  .soft-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
 }
